@@ -1,0 +1,75 @@
+*{
+    margin: 0px;
+    font-family: century Gothic;
+}
+body{
+    background-color: white;
+}
+.nav{
+    height: 50px;
+    width: 100%;
+    background-color: #FD4600;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.right{
+    width: 100%;
+text-align:right ;
+height: 100%;
+
+}
+.logo{
+    width: 100%;
+text-align:left ;
+height: 100%;
+padding: 5px;
+display: flex;
+
+
+}
+.logo p{
+margin-top: 10px;
+margin-left: 10px;
+color: white;
+font-weight: 800;
+
+
+}
+.logo_{
+    height:40px;
+    width: 40px;
+    border-radius: 100px;
+    background-color: white;
+ 
+}
+.middle_section{
+    background-image: url('../images/bike.jpg');
+    height: 400px;
+    padding-left: 40px;
+    background-size: cover;
+    background-position:center;
+    padding-top:30px ;
+    background-repeat: no-repeat;
+    text-align: left;
+    justify-content: center;
+    color: white;
+}
+.f_text{
+   
+   
+   margin-top: 15px;
+    color: white;
+    font-weight: 100;
+   
+}
+.f_text> span{
+    color: #FD4600;
+}
+.button{
+    background-color: #FD4600;
+    padding: 7px;
+    border-radius: 7px;
+    color: white;
+    margin-top: 10px;
+
+}
