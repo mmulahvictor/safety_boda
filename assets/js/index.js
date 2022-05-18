@@ -77,11 +77,9 @@ if(vehicleRecord.length==0){
 else{
 for(var i=0 ; i< vehicleRecord.length; i++){
   if(vehicleRecord[i].plate1==plate){
-    //   alert("This vehicle already exists")
+      alert("This vehicle already exists")
       modal.style.display = "block";
-      localStorage.setItem("vehicleDB", JSON.stringify(vehicleRecord)); //store colors
-      var fromDB = JSON.parse(localStorage.getItem("vehicleDB")); //get them back
-      console.log(fromDB);
+     
   }
   else{
 
@@ -106,17 +104,13 @@ for(var i=0 ; i< vehicleRecord.length; i++){
 }
 }
 
-alert(vehicleRecord.length)
 
 
-    
-// const count = brands.push({reebok:2000});
-alert(regForm.model1);
+
+
     
     
     event.preventDefault(); 
 } 
 form.addEventListener('submit', handleForm);
-function validateInputs(){
-  
-}
+
