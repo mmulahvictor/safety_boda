@@ -43,3 +43,40 @@ body{
     border: 2px solid bisque;
     background: transparent;
 }
+
+*{
+    box-sizing: border-box;
+}
+.two .images{
+    float: left;
+    width: 20%;
+    padding: 10px;
+    height: 30px;
+    /* border: 5px solid white; */
+    /* display: flex; */
+}
+
+
+.two .images .thumbnail{
+    /* position: relative; */
+    /* top: -25px; */
+    /* left: -35px; */
+    /* width: 500px; */
+    /* height: auto; */
+    /* display: block; */
+    z-index: 999;
+}
+
+.third{
+    padding-top: 250px;
+    display: flex;
+    width: 100%;
+}
+
+
+.two::after{
+    content: "";
+    display: table;
+    clear: both;
+    /* padding-top: 20px; */
+}
