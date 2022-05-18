@@ -1,7 +1,8 @@
 body{
-    /*padding-left: 100px;
-    padding-right: 100px;*/
+    padding-left: 80px;
+    padding-right: 80px;
 }
+
 /*Navigation*/
 .nav{
     height: 50px;
@@ -117,7 +118,7 @@ img {
 /* Caption text */
 .text {
   color: #f2f2f2;
-  font-size: 15px;
+  font-size: 20px;
   padding: 8px 12px;
   position: absolute;
   bottom: 8px;
@@ -178,25 +179,34 @@ img {
     padding-top: 150px;
     padding-left: 30px;
     width: 40%;
+    font-size: 15px;
 }
 section > img{
     width: 500px;
-    border: 2px solid;
 
 }
 #column{
     display: flex;
+    margin-bottom: 20px;
+}
+#column > div{
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 10px;
+  border-radius: 10px;
 }
 #column > div > h3{
-    font-size: 40px;
+    font-size: 20px;
 }
 #column > div > p{
-    font-size: 30px;
+    font-size: 15px;
 }
 form{
     padding-left: 300px;
 }
-.text{
+.text1{
     width: 500px;
     border-radius: 10px;
     height: 70px;
