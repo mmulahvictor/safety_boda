@@ -1,0 +1,108 @@
+body{
+    /*padding-left: 100px;
+    padding-right: 100px;*/
+}
+/*Navigation*/
+.nav{
+    height: 50px;
+    width: 100%;
+    background-color: #FD4600;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.right{
+    width: 100%;
+    padding-top:10px ;
+text-align:right ;
+height: 100%;
+display: flext;
+
+}
+.logo{
+    width: 100%;
+text-align:left ;
+height: 100%;
+padding: 5px;
+display: flex;
+
+
+}
+.logo p{
+margin-top: 10px;
+margin-left: 10px;
+color: white;
+font-weight: 800;
+
+
+}
+.logo_{
+    height:40px;
+    width: 40px;
+    border-radius: 100px;
+    background-color: white;
+ 
+}
+.links{
+    padding: 7px;
+    margin: 13px;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 7px;
+    font-size: 10px;
+    color: #000000;
+    text-decoration: none;
+}
+.links_white{
+    padding: 7px;
+    margin: 13px;
+    margin-top: 20px;
+    background-color:#11e4c1;
+    border-radius: 7px;
+    text-decoration: none;
+
+    font-size: 10px;
+    color: #ffffff;
+}
+
+
+.content1{
+    display: flex;
+    border-radius: 10px;
+    padding: 20px;
+
+}
+#paragraph1{
+    margin-right: 10px;
+    margin-left: 30px;
+    padding-top: 150px;
+    padding-left: 30px;
+    width: 40%;
+}
+section > img{
+    width: 500px;
+    border: 2px solid;
+
+}
+#column{
+    display: flex;
+}
+#column > div > h3{
+    font-size: 40px;
+}
+#column > div > p{
+    font-size: 30px;
+}
+form{
+    padding-left: 300px;
+}
+.text{
+    width: 500px;
+    border-radius: 10px;
+    height: 70px;
+    margin-bottom: 20px;
+}
+.button{
+    height: 30px;
+    width: 70px;
+    margin-left: 430px;
+}
