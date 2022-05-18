@@ -77,6 +77,7 @@ font-weight: 800;
     color: #ffffff;
     margin-top: 10px;
     height: 40px;
+    text-decoration: none !important;
 
 
 }
@@ -218,9 +219,13 @@ font-weight: 800;
   .modal-content {
     background-color: #fefefe;
     margin: auto;
+    border-radius: 10px;
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
+  }
+  .okay{
+      height: 20px;
   }
   
   /* The Close Button */
