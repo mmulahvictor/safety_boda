@@ -208,7 +208,7 @@ section > img{
 #column > div > p{
     font-size: 15px;
 }
-form{
+.comment{
     
     border-radius: 5px;
     background-color: #f2f2f2;
@@ -216,11 +216,16 @@ form{
     margin-left: 300px;
     margin-right: 350px;
 }
-.text1{
-    width: 500px;
-    border-radius: 10px;
-    height: 70px;
-    margin-bottom: 20px;
+#textbox{
+
+}
+.textarea {
+  display: block;
+  max-width: 100%;
+  overflow: hidden;
+  resize: both;
+  min-height: 40px;
+  line-height: 20px;
 }
 .button{
     height: 30px;
