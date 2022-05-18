@@ -7,6 +7,7 @@ body{
     background-color: rgb(255, 255, 255);
     margin: 0%;
     padding: 0%;
+    width: 100%;
 }
 
 .nav{
@@ -20,7 +21,7 @@ body{
 
 .bodaa{
     border-right: 2px grey solid;
-    /* width: 100px; */
+    width: 100px;
     padding-bottom: 10px;
     align-items: center;
     justify-content: center;
@@ -138,13 +139,13 @@ font-weight: 800;
 }
 
 .side2{
-    /* width: 100%; */
+    width: 100%;
     height: 350px;
     justify-content: center;
     padding-left: 150px;
 }
 .third{
-    width: 100%;
+    /* width: 100%; */
     align-items: center;
     padding: 100px;
 
@@ -155,9 +156,11 @@ font-weight: 800;
 
 .table{
 width: 90%;
-border: 1px solid black;
+height: 40px;
+/* border: 1px solid black; */
 }
 
-.table, th td{
+.table, th, td{
     border: 1px solid black;
+    
 }
