@@ -1,5 +1,70 @@
 body{
-    background-color: azure;
+    background-color: rgb(255, 255, 255);
     margin: 0%;
     padding: 0%;
+}
+
+.nav{
+    height: 50px;
+    width: 100%;
+    background-color: #FD4600;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+
+.right{
+width: 100%;
+padding-top:10px ;
+text-align:right ;
+height: 100%;
+display: flext;
+
+
+
+}
+.logo{
+    width: 100%;
+text-align:left ;
+height: 100%;
+padding: 5px;
+display: flex;
+
+
+}
+.logo p{
+margin-top: 10px;
+margin-left: 10px;
+color: white;
+font-weight: 800;
+
+
+}
+.logo_{
+    height:40px;
+    width: 40px;
+    border-radius: 100px;
+    background-color: white;
+ 
+}
+.links{
+    padding: 7px;
+    margin: 13px;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 7px;
+    font-size: 10px;
+    color: #000000;
+    text-decoration: none;
+}
+.links_white{
+    padding: 7px;
+    margin: 13px;
+    margin-top: 20px;
+    background-color:#11e4c1;
+    border-radius: 7px;
+    text-decoration: none;
+
+    font-size: 10px;
+    color: #ffffff;
 }
