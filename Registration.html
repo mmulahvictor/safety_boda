@@ -43,36 +43,47 @@
     <div class="reg_f">
     <h4>Boda Boda Registration Form</h4>
     <form  id="registration">
-    <input class="input2" placeholder="Full Names"  required/>
-    <label id="fname" class="red"></label>
-    <input class="input2" placeholder="ID Number" type="number" required/>
+    <input class="input2" id="fname" placeholder="Full Names" value="Brian"  required/>
+    <label id="fnamevalid" class="red"></label>
+    <input class="input2" id="idnumber" placeholder="ID Number" type="number" required/>
     <label id="idvalid" class="red"></label>
 
-    <input class="input2" placeholder="Email" type="email" required/>
-    <label id="idvalid" class="red"></label>
+    <input class="input2" id="email" placeholder="Email" type="email" required/>
+    <label id="emailvalid" class="red"></label>
+    <input class="input2" id="password" placeholder="Password" type="password"  required/>
+    <label id="passvalid" class="red"></label>
+    <input class="input2" id="phone" placeholder="Phone nu" type="phone" required/>
+    <label id="phonevalid" class="red"></label>
 
-    <input class="input2" placeholder="Plate Number" type="text" required/>
+    <input class="input2" id="plate" placeholder="Plate Number" type="text" required/>
     <label id="platevalid" class="red"></label>
 
-    <input class="input2" placeholder="Chasis No." type="text" required/>
+    <input class="input2" id="chasis" placeholder="Chasis No." type="text" required/>
     <label id="chasisvalid" class="red"></label>
 
-    <input class="input2" placeholder="Model"  required/>
+    <input class="input2" id="model" placeholder="Model"  required/>
     <label id="modelvalid" class="red"></label>
-    
 
-    
-    <input class="input2" placeholder="Manufacturer Name" required/>
+    <input class="input2" id="manufacturer" placeholder="Manufacturer Name" required/>
     <label id="platevalid" class="red"></label>
 
-    <input class="input2" placeholder="Area of Operation" required/>
+    <input class="input2" id="oparation" placeholder="Area of Operation" required/>
     <label id="operationvalid" class="red"></label>
     <br/>
     <button class="button" type="submit">Submit &nbsp;<i class="fa fa-angle-double-right"></i></button>
-    <button class="button" type="reset">Reset &nbsp;<i class="fa fa-retweet"></i></button>
+    <button class="hide" type="reset" id="reset" ></button>
 </form>
 </div>
 </div>
+</div>
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close" id="close">&times;</span>
+      <p><img src="./"/>Some text in the Modal..</p>
+    </div>
+  
 </div>
 </body>
 <script src="./assets/js/index.js"></script>
