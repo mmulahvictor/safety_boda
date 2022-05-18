@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/about.css">
+
     <title>About Us</title>
 </head>
 <body>
@@ -20,15 +21,48 @@
             <a class="links" href="/verify_plate.html">Verify</a>
         
             <a class="links" href="/index.html">Home</a>
-            <a class="links">About us</a>
+            <a class="links" href="/about.html">About us</a>
             <a class="links_white" href="/Registration.html">Registration</a>
         
             <a class="links_white" href="/Log_in.html">Log in</a>
         
-        
-        
         </div>
     </div>
+
+    <section>
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img src="./assets/images/boda1.jpeg" style="width:100%">
+              <div class="text">Caption Text</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img src="./assets/images/boda2.jpeg" style="width:100%">
+              <div class="text">Caption Two</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img src="./assets/images/boda3.jpeg" style="width:100%">
+              <div class="text">Caption Three</div>
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+            
+        </div>
+            <br>
+            
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>        
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+    </section>
+      
     <section class="content1">
         <p id="paragraph1">
             A tech-driven and convinient bodaboda transportation service, commited to enabling the safety of custommers and the drivers.
@@ -68,4 +102,5 @@
         </form>
     </section>
 </body>
+,<script src="./assets/js/about.js"></script>
 </html>
