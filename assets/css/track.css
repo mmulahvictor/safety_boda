@@ -13,6 +13,16 @@ body{
 }
 
 
+.bodaa{
+    border-right: 2px grey solid;
+}
+
+
+.second{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding-top: 50px;
+}
 .right{
 width: 100%;
 padding-top:10px ;
@@ -47,6 +57,8 @@ font-weight: 800;
     background-color: white;
  
 }
+
+
 .links{
     padding: 7px;
     margin: 13px;
@@ -57,6 +69,8 @@ font-weight: 800;
     color: #000000;
     text-decoration: none;
 }
+
+
 .links_white{
     padding: 7px;
     margin: 13px;
