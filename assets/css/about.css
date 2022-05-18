@@ -216,12 +216,10 @@ section > img{
     margin-left: 300px;
     margin-right: 350px;
 }
-#textbox{
-
-}
 .textarea {
   display: block;
   max-width: 100%;
+  min-width: 100%;
   overflow: hidden;
   resize: both;
   min-height: 40px;
