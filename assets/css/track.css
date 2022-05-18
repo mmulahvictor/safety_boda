@@ -1,5 +1,166 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
 body{
-    background-color: azure;
+    background-color: rgb(255, 255, 255);
     margin: 0%;
     padding: 0%;
+    width: 100%;
+}
+
+.nav{
+    height: 50px;
+    width: 100%;
+    background-color: #FD4600;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+
+.bodaa{
+    border-right: 2px grey solid;
+    width: 100px;
+    padding-bottom: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.text{
+    font-size: 70px;
+    padding-left: 110px;
+    color: #FD4600;
+    margin: 10px;
+    padding-bottom: 0px;
+    line-height: 0px;
+}
+
+.text2{
+    font-size: 30px;
+    align-content: center;
+    /* padding-left: 180px; */
+    color: #FD4600;
+    margin: 50px;
+    width: 100%;
+    padding-bottom: 0px;
+    line-height: 0px;
+}
+
+.btn{
+    padding-left: 200px;
+    padding-top: 10px;
+}
+.side_images{
+    height: 320px;
+    justify-content: center;
+    padding-left: 100px;
+
+}
+.btn button{
+    /* padding-top: 20px; */
+    background-color: #FD4600;
+    border-radius: 10px;
+    line-height: 0px;
+    border: none;
+    width: 150px;
+    height: 40px;
+   
+}
+
+.second{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 50% 50%;
+    padding-top: 30px;
+}
+
+
+.right{
+width: 100%;
+padding-top:10px ;
+text-align:right ;
+height: 100%;
+display: flext;
+
+
+
+}
+.logo{
+    width: 100%;
+text-align:left ;
+height: 100%;
+padding: 5px;
+display: flex;
+
+
+}
+.logo p{
+margin-top: 10px;
+margin-left: 10px;
+color: white;
+font-weight: 800;
+
+
+}
+.logo_{
+    height:40px;
+    width: 40px;
+    border-radius: 100px;
+    background-color: white;
+ 
+}
+
+
+.links{
+    padding: 7px;
+    margin: 13px;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 7px;
+    font-size: 10px;
+    color: #000000;
+    text-decoration: none;
+}
+
+
+.links_white{
+    padding: 7px;
+    margin: 13px;
+    margin-top: 20px;
+    background-color:#11e4c1;
+    border-radius: 7px;
+    text-decoration: none;
+
+    font-size: 10px;
+    color: #ffffff;
+}
+
+.side2{
+    width: 100%;
+    height: 350px;
+    justify-content: center;
+    padding-left: 150px;
+}
+.third{
+    /* width: 100%; */
+    align-items: center;
+    padding: 100px;
+
+
+    
+
+}
+
+.table{
+width: 90%;
+height: 40px;
+/* border: 1px solid black; */
+}
+
+.table, th, td{
+    border: 1px solid black;
+    
 }
