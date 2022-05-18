@@ -19,7 +19,7 @@ display: flext;
 
 }
 .logo{
-    width: 100%;
+width: 100%;
 text-align:left ;
 height: 100%;
 padding: 5px;
@@ -77,12 +77,12 @@ nav img{
 .h1{
     display: flex;
     padding-top: 20px;
-    font-size: 40px;
+    font-size: 30px;
    
     justify-content: center;
 }
 .experience{
-    font-size: 30px;
+    font-size: 20px;
     padding-top: 10px;
 }
 .confirm{
@@ -91,7 +91,7 @@ nav img{
     border: none;
     height: 50px;
     width: 350px;
-    font-size: 30px;
+    font-size: 20px;
     border-radius: 10px;
 }
 .contain{
@@ -112,9 +112,6 @@ nav img{
 
 }
 .arrow{
-color: black;
+color: white;
 
-}
-.header-section1{
-    color: brown;
 }
