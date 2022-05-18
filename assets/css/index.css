@@ -1,34 +1,120 @@
 *{
-    padding: 10px;
+    padding: 0px;
     margin: 0px;
 }
-nav > a{
-    font-size: larger;
-    justify-content: space-between;
-    padding-right: 10px;
-    font-size: 20px;
-    font-weight:bolder;
-    padding-left: 50px;
-    color: white;
+.nav{
+    height: 60px;
+    width: 100%;
+    background-color: #FD4600;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.right{
+width: 100%;
+padding-top:10px ;
+text-align:right ;
+height: 100%;
+display: flext;
+
+}
+.logo{
+    width: 100%;
+text-align:left ;
+height: 100%;
+padding: 5px;
+display: flex;
+
+}
+.logo p{
+margin-top: 10px;
+margin-left: 10px;
+color: white;
+font-weight: 800;
+
+}
+.logo_{
+    height:40px;
+    width: 40px;
+    border-radius: 100px;
+    background-color: white;
+}
+.links{
+    padding: 7px;
+    margin: 13px;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 7px;
+    font-size: 10px;
+    color: #000000;
     text-decoration: none;
 }
-nav{
-    border: 2px solid;
-    border-radius: 15px;
-    background-color: green;
-    padding-right: 10px;
-    text-align: center; 
-  
-}
-.container1{
-    text-align: right;
-    padding: 20px; 
-    height: 60%;
-    margin: none;
+.links_white{
+    padding: 7px;
+    margin: 13px;
+    margin-top: 20px;
+    background-color:#11e4c1;
+    border-radius: 7px;
+    text-decoration: none;
+
+    font-size: 10px;
+    color: #ffffff;
 }
 nav img{
     border-radius: 50%;
     height: 20%;
     display: flex;
-    padding: 0.5%;
+}
+.boda-profile{
+    padding-right: 30px;
+    height: 600px;
+    width: 700px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-top: 5%;    
+}
+.h1{
+    display: flex;
+    padding-top: 20px;
+    font-size: 40px;
+   
+    justify-content: center;
+}
+.experience{
+    font-size: 30px;
+    padding-top: 10px;
+}
+.confirm{
+    color: white;
+    background-color: #FD4600;
+    border: none;
+    height: 50px;
+    width: 350px;
+    font-size: 30px;
+    border-radius: 10px;
+}
+.contain{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 10%;
+    align-items: center;
+    text-align: justify;
+    
+   
+}
+.header{
+    margin: right;
+    margin-top: 5%;
+    text-align: center;
+
+    
+
+}
+.arrow{
+color: black;
+
+}
+.header-section1{
+    color: brown;
 }
