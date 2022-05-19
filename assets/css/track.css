@@ -166,6 +166,7 @@ text-align: center;
 display: table;
 box-shadow:  0 0 20px rgba(rgb(201, 108, 108), rgb(70, 83, 70), blue, alpha);
 padding: 0 0 8em 0;
+border: none;
 border-collapse: collapse;
 /* padding-left: 100px; */
 height: 60px;
@@ -195,22 +196,23 @@ tr :nth-child(even){
 .third h3{
     align-items: center;
     justify-content: center;
-    padding: 10px;
+    padding: 15px;
     font-family: sans-serif;
-
 }
+
+
 .table th{
     height: 10px;
     color: #FD4600;
+    /* border: none; */
     
 }
-.table, th, td{
-    border: 1px solid black;
-    height: 20px;
-}
 
-.th1{
-    /* background-color: #FD4600; */
-    color: #000000;
-    /* width: 100%; */
+.t1{
+    background-color: #e78057;
+}
+.table, th, td{
+    /* border: 1px solid black; */
+    height: 20px;
+    border-bottom: 1px solid black;
 }
