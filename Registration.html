@@ -21,7 +21,7 @@
             <a class="links" href="/index.html">Home</a>
             <a class="links" href="/track.html">Tracker</a>
             <a class="links" href="/about.html">About us</a>
-            <a class="links_white" onclick="gotoReg()">Registration</a>
+   
 
         
             <a class="links_white" onclick="gotoLogin()">Log in</a>
@@ -36,7 +36,7 @@
     <div class="icon_section">
    <img src="./assets/images/bike2.png"/><br/>
    <h4 class="orange_text">Please fill in the following details to continue</h4><br/>
-   <button class="button"><i class="fa fa-angle-double-left"></i>&nbsp;Go to Log In</button>
+   <button class="button" onclick="gotoLogin()"><i class="fa fa-angle-double-left"></i>&nbsp;Go to Log In</button>
 
 
 </div>
@@ -83,28 +83,50 @@
     <div class="middle_section">
         <h2 class="f_text">Verify Your Ride Today</h2>
         <h2 class="f_text"><span>Get Your</span> Bodaa Listed Today </h2>
-        <button class="button">Get started</button>
+        <button class="confirm" onclick="gotoReg()" >Get started</button>
     </div>
     <div class="lower_section">
-    <div class="lower_section2">
+    
+        <div class="lower_section2">
 <form id="verify">
-        <h4>Enjoy a safe ride by verifying your boda boda carrier</h4>
-        <input class="input" id="plate" placeholder="Enter Plate Number"/>
-        <input class="input" id="id_no" placeholder="Enter Your ID No."/><br>
+        <h4 class="orange">Enjoy a safe ride by verifying your boda boda carrier</h4>
+        <input class="input" id="plate1" required type="text" placeholder="Enter Plate Number"/>
+        <input class="input" id="id_no" required type="number" placeholder="Enter Your ID No."/><br>
         <button class="button">Verify &nbsp;<i class="fa fa-angle-double-right"></i></button>
 
     </form>
   
     </div>
-</div>
-</div>
 
+    <div class="success" id="scess">
+
+      <img src="./assets/images/shield.png" class="shield"/>
+          <p>Your travel is safe!
+
+          </p>
+          <p>Operator</p>
+          <h1 id="rider"></h1>
+          <hr/>
+          <h1 id="plate1"></h1>
+
+            </div>
+            <div class="error" id="err">
+
+                <img src="./assets/images/danger.png" class="shield"/>
+                    <p>Operator not found
+          
+                    </p>
+                    <p>Operator</p>
+                   
+</div>
+</div>
 <div id="login">
 <div class="registration">
     <div class="icon_section">
    <img src="./assets/images/log_in.png"/><br/>
    <h4 class="orange_text">Please fill in the following details to continue</h4><br/>
-   <button class="button"><i class="fa fa-angle-double-left"></i>&nbsp;Go to Registration</button>
+   <button class="button" onclick="gotoReg()"><i class="fa fa-angle-double-left" ></i>&nbsp;Go to Registration</button>
+
 
 
 </div>
@@ -114,7 +136,6 @@
     <h4>Member Login</h4>
     <input class="input2" placeholder="Username" required/>
     <input class="input2" type="password" placeholder="Password" required/>
-    
     <br/>
 
 
