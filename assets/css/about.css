@@ -53,6 +53,9 @@ font-weight: 800;
     color: #000000;
     text-decoration: none;
 }
+.links:active{
+  color: green;
+}
 .links_white{
     padding: 7px;
     margin: 13px;
@@ -202,12 +205,23 @@ section > img{
   padding: 10px;
   border-radius: 10px;
 }
-#column > div > h3{
+#column > div > span > h3{
     font-size: 20px;
+    margin-top: -0.5px;
 }
 #column > div > p{
     font-size: 15px;
 }
+
+.describe{
+  display: flex;
+  justify-content: center;
+}
+#column > div > span img{
+  width: 50px;
+  
+}
+
 .comment{
     
     border-radius: 5px;
