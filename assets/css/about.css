@@ -171,23 +171,28 @@ img {
     display: flex;
     border-radius: 10px;
     padding: 20px;
+    margin-right: 80px;
 
 }
 #paragraph1{
     margin-right: 10px;
-    margin-left: 30px;
+    margin-left: 70px;
     padding-top: 150px;
     padding-left: 30px;
     width: 40%;
     font-size: 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
 }
 section > img{
-    width: 500px;
-
+    width: 575px;
+    border-radius: 10px;
 }
 #column{
     display: flex;
     margin-bottom: 20px;
+    margin-right: 90px;
+    margin-left: 80px;
 }
 #column > div{
   margin-left: 10px;
@@ -203,17 +208,28 @@ section > img{
 #column > div > p{
     font-size: 15px;
 }
-form{
-    padding-left: 300px;
+.comment{
+    
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-left: 300px;
+    margin-right: 350px;
 }
-.text1{
-    width: 500px;
-    border-radius: 10px;
-    height: 70px;
-    margin-bottom: 20px;
+.textarea {
+  display: block;
+  max-width: 100%;
+  min-width: 100%;
+  overflow: hidden;
+  resize: both;
+  min-height: 40px;
+  line-height: 20px;
 }
 .button{
     height: 30px;
     width: 70px;
     margin-left: 430px;
+    background-color: rgb(253,70,0);
+    border: none;
+    border-radius: 5px;
 }
