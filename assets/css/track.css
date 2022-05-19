@@ -24,7 +24,8 @@ body{
     align-items: center;
     justify-content: center;
     grid-template-columns: 50% 50%;
-    padding-top: 30px;
+    padding-top: 10px;
+    padding-bottom: 50px;
 }
 
 
@@ -39,17 +40,20 @@ body{
 
 
 .text{
-    font-size: 70px;
-    padding-left: 110px;
+    font-size: 50px;
+    padding-left: 160px;
     color: #FD4600;
     margin: 10px;
     padding-bottom: 0px;
     line-height: 0px;
 }
 
+.piki{
+    margin: 10px;
+}
 .text2{
-    font-size: 30px;
-    padding-left: 110px;
+    font-size: 20px;
+    padding-left: 150px;
     align-content: center;
     /* padding-left: 180px; */
     color: #FD4600;
@@ -61,21 +65,29 @@ body{
 .btn{
     padding-left: 200px;
     padding-top: 5px;
-    /* margin: 5px; */
+    margin: 20px;
 }
 .side_images{
-    height: 320px;
+    height: 250px;
     justify-content: center;
-    padding-left: 100px;
-
+    padding-left: 80px;
 }
+
+.side2{
+    /* width: 100%; */
+    height: 250px;
+    justify-content: center;
+    padding-left: 150px;
+}
+
+
 .btn button{
     /* padding-top: 20px; */
-    background-color: #FD4600;
+    background-color: #0f830b;
     border-radius: 10px;
     line-height: 0px;
     border: none;
-    width: 150px;
+    width: 100px;
     height: 40px;
    
 }
@@ -146,21 +158,19 @@ font-weight: 800;
     color: #ffffff;
 }
 
-.side2{
-    /* width: 100%; */
-    height: 350px;
-    justify-content: center;
-    padding-left: 150px;
-}
+
 .third{
     /* width: 100%; */
+    justify-content: center;
     align-items: center;
-    padding: 60px;
+    padding-top: 50xp;
+    padding-left: 170px;
+    /* padding: 20pxpx; */
 }
 
 
 .table{
-width: 100%;
+width: 80%;
 overflow: hidden;
 text-align: center;
 display: table;
