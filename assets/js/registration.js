@@ -6,10 +6,17 @@ var modal = document.getElementById("myModal");
 var verify = document.getElementById("verify");
 verify.addEventListener('submit', handleVerify);
 var form = document.getElementById("registration");
+
+
 window.addEventListener("load", function () {
   // code goes below
-  document.getElementById("registration").style.display = 'none';
   document.getElementById("login").style.display = 'none';
+  document.getElementById("scess").style.display = 'none';
+  document.getElementById("err").style.display = 'none';
+  document.getElementById("registration").style.display = 'none';
+
+ 
+
 });
 form.addEventListener('submit', handleForm);
 
@@ -25,26 +32,32 @@ span.onclick = function () {
 }
 
 //FUNCTIONS
-function gotoReg(){
+function gotoReg() {
   document.getElementById("registration").style.display = 'block';
   document.getElementById("login").style.display = 'none';
   document.getElementById("verify_section").style.display = 'none';
 
 }
 
-function gotoLogin(){
+function gotoLogin() {
   document.getElementById("registration").style.display = 'none';
   document.getElementById("login").style.display = 'block';
   document.getElementById("verify_section").style.display = 'none';
-
 }
-function gotoVerify(){
+function gotoVerify() {
   document.getElementById("registration").style.display = 'none';
   document.getElementById("login").style.display = 'none';
   document.getElementById("verify_section").style.display = 'block';
-
 }
 
+
+  //Search number plate
+  const findPlate = function (vehicleRecord, plate) {
+    const index = vehicleRecord.findIndex(function (todo, index) {
+      return todo.plate1.toLowerCase() == plate.toLowerCase()
+   })
+    return vehicleRecord[index]
+  }
 window.onclick = function (event) {
   if (event.target == modal) {
     modal.style.display = "none";
@@ -123,20 +136,24 @@ function handleForm(event) {
 //VERIFY SECTIONS
 
 function handleVerify(event) {
-  var fname = document.getElementById('id_no').value;
-  var plate = document.getElementById('plate').value;
- 
-  // var results = [];
 
-  // var toSearch = "lo";
-  
-  // for(var i=0; i<vehicleRecord.length; i++) {
-  //   for(key in vehicleRecord[i]) {
-  //     if(vehicleRecord[i][key].indexOf(toSearch)!=-1) {
-  //       results.push(objects[i]);
-  //     }
-  //   }
-  // }
-  alert("dckvfd")
+var plateNumber=document.getElementById("plate1").value;
+var idNumber=document.getElementById("id_no").value;
+
+let print=findPlate(vehicleRecord,plateNumber)
+console.log(print);
+if(print!=null){
+  localStorage.removeItem("searchResults");
+  localStorage.setItem("searchResults", JSON.stringify(print)); //store colors
+  document.getElementById("rider").innerHTML=print.fname1;
+  document.getElementById("plate1").innerHTML=print.plate1;
+  document.getElementById("scess").style.display = 'block';
+  document.getElementById("err").style.display = 'none';
+
+}
+else{
+  document.getElementById("scess").style.display = 'none';
+  document.getElementById("err").style.display = 'block';
+}
   event.preventDefault();
 }

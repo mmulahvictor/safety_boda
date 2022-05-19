@@ -1,6 +1,13 @@
+@font-face {
+    font-family: best;
+    src: url('../font/best.ttf');
+  }
+    
+
 *{
     padding: 0px;
     margin: 0px;
+    font-family: best;
 }
 .nav{
     height: 60px;
@@ -33,18 +40,22 @@ color: white;
 font-weight: 800;
 
 }
-.logo_{
+.logo__{
     height:40px;
-    width: 40px;
+    width:40px;
+    margin-top: 10px;
     border-radius: 100px;
-    background-color: white;
+    /* background-color: white; */
 }
 .links{
     padding: 7px;
     margin: 13px;
     margin-top: 20px;
-    background-color: white;
-    border-radius: 7px;
+    background-color: unset;
+    border: 1px solid white;
+    border-radius: 2px;
+    color: white !important;
+    font-size: 15px !important;
     font-size: 10px;
     color: #000000;
     text-decoration: none;
@@ -67,7 +78,7 @@ nav img{
 }
 .boda-profile{
     padding-right: 30px;
-    height: 500px;
+    height: 600px;
     width: 700px;
     overflow: hidden;
     border-radius: 10px;
@@ -93,8 +104,6 @@ nav img{
     width: 350px;
     font-size: 20px;
     border-radius: 10px;
-    cursor: pointer;
-    
 }
 .contain{
     display: flex;
@@ -102,18 +111,53 @@ nav img{
     padding-right: 10%;
     align-items: center;
     text-align: justify;
-}
-.last{
-    text-decoration: none;
-    color: white;
+    
+   
 }
 .header{
     margin: right;
     margin-top: 5%;
     text-align: center;
+
+    
+
+}
+.logo_{
+    height: 40px;
 }
 .arrow{
 color: white;
+
+}
+.orange{
+    color: #FD4600;
+}
+.confirm{
+    background-color: unset;
+    border: 1px white solid;
+    border-radius: 5px;
+    width: 250px;
+}
+.whole{
+    height: 100%;
+    width: 100%;
+    background-color: #FD4600;
+    background-image: url('../images/SafeBoda-line-of-bikes-new-branding.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.black{
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: 0.7;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 10%;
 }
 
-
+.h3{
+color: white;
+font-weight: 100;
+}
