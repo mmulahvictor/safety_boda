@@ -203,16 +203,28 @@ tr :nth-child(even){
 
 .table th{
     height: 10px;
-    color: #FD4600;
+    color: #000000;
     /* border: none; */
     
 }
 
+tr:nth-child(even){
+    background-color: #afadad;
+}
+
+tr:nth-child(odd){
+    background-color: #c9c5c5;
+}
 .t1{
-    background-color: #e78057;
+    background-color: #f34404;
 }
 .table, th, td{
     /* border: 1px solid black; */
     height: 20px;
     border-bottom: 1px solid black;
+    
+}
+
+tr:hover{
+    background-color: #b85833;
 }
