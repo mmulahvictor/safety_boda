@@ -9,6 +9,7 @@
     <title>Verify Plate</title>
 </head>
 <body>
+    
     <div class="nav">
         <div class="logo">
         <div class="logo_">
@@ -21,16 +22,18 @@
             <a class="links" href="/verify_plate.html">Verify</a>
             <a class="links" href="/track.html">Tracker</a>
             <a class="links" href="/about.html">About us</a>
-            <a class="links_white" href="/Registration.html">Registration</a>
+            <a class="links_white" onclick="gotoReg()">Registration</a>
 
         
-            <a class="links_white" href="/Log_in.html">Log in</a>
+            <a class="links_white" onclick="gotoLogin()">Log in</a>
         
         
         
         </div>
             </div>
-   <div class="registration">
+
+<div id="registration">
+   <div class="registration" >
     <div class="icon_section">
    <img src="./assets/images/bike2.png"/><br/>
    <h4 class="orange_text">Please fill in the following details to continue</h4><br/>
@@ -76,15 +79,65 @@
 </div>
 </div>
 </div>
+</div>
+<div id="verify_section">
+    <div class="middle_section">
+        <h2 class="f_text">Verify Your Ride Today</h2>
+        <h2 class="f_text"><span>Get Your</span> Bodaa Listed Today </h2>
+        <button class="button">Get started</button>
+    </div>
+    <div class="lower_section">
+    <div class="lower_section2">
+<form id="verify">
+        <h4>Enjoy a safe ride by verifying your boda boda carrier</h4>
+        <input class="input" id="plate" placeholder="Enter Plate Number"/>
+        <input class="input" id="id_no" placeholder="Enter Your ID No."/><br>
+        <button class="button">Verify &nbsp;<i class="fa fa-angle-double-right"></i></button>
+
+    </form>
+  
+    </div>
+</div>
+</div>
+
+<div id="login">
+<div class="registration">
+    <div class="icon_section">
+   <img src="./assets/images/log_in.png"/><br/>
+   <h4 class="orange_text">Please fill in the following details to continue</h4><br/>
+   <button class="button"><i class="fa fa-angle-double-left"></i>&nbsp;Go to Registration</button>
+
+
+</div>
+<div class="form_section">
+    <form id="login">
+    <div class="reg_f">
+    <h4>Member Login</h4>
+    <input class="input2" placeholder="Username" required/>
+    <input class="input2" type="password" placeholder="Password" required/>
+    
+    <br/>
+
+
+
+
+    <button class="button" type="submit">Log In &nbsp;<i class="fa fa-angle-double-right"></i></button>
+    <button class="button" >Forgot Password &nbsp;<i class="fa fa-retweet"></i></button>
+</div>
+</form>
+</div>
+</div>
+</div>
+
 <div id="myModal" class="modal">
 
     <!-- Modal content -->
     <div class="modal-content">
       <span class="close" id="close">&times;</span>
-      <p><img src="./"/></p>
+      <p id="message"></p>
     </div>
   
 </div>
 </body>
-<script src="./assets/js/index.js"></script>
+<script src="./assets/js/registration.js"></script>
 </html>
