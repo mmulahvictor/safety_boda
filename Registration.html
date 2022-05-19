@@ -18,13 +18,15 @@
         <p>Safety Bodaa</p>
         </div>
         <div class="right">
-            <a class="links" href="/index.html">Home</a>
-            <a class="links" href="/track.html">Tracker</a>
-            <a class="links" href="/about.html">About us</a>
+            <a class="confirm" onclick="location.href = '/index.html';">Home</a>
+            <a class="confirm" onclick="gotoReg()">Register</a>
+
+            <a class="confirm" onclick="gotoTrack()" >Tracker</a>
+            <a class="confirm" onclick="location.href = '/about.html';">About us</a>
    
 
         
-            <a class="links_white" onclick="gotoLogin()">Log in</a>
+            <a class="confirm" onclick="gotoLogin()">Log in</a>
         
         
         
@@ -107,7 +109,7 @@
           <p>Operator</p>
           <h1 id="rider"></h1>
           <hr/>
-          <h1 id="plate1"></h1>
+          <h1 ><span id="plate11"></span> &nbsp;|&nbsp;<span id="operation"></span></h1> 
 
             </div>
             <div class="error" id="err">
@@ -116,10 +118,9 @@
                     <p>Operator not found
           
                     </p>
-                    <p>Operator</p>
                    
 </div>
-</div>
+</div></div>
 <div id="login">
 <div class="registration">
     <div class="icon_section">
@@ -148,7 +149,156 @@
 </div>
 </div>
 </div>
+<div id="track">
+    <div class="two_images">
+<div class="first_side">
+   <img class="img_s" src="./assets/images/Bbike.png"/>
+   <h3>Motobike Records</h3>
+   <p>Get access to registered motobikes</p>
+   <button class="button">Motobike records</button>
+</div>
+<div class="first_side">
+    <img class="img_s" src="./assets/images/WhatsApp Image 2022-05-18 at 10.43.42 AM.jpeg"/>
+    <h3>Passanger Records</h3>
+    <p>Get access to passenger activities</p>
+    <button class="button">Motobike records</button>
+ </div>
+<div class="second_side"></div>
+    </div>
+     <div class="third">
+         <h3>Motobike Records</h3>
+         <div id="vehicles">
 
+         </div>
+         <table class="table" >
+            <thead>
+             <tr>
+                 <th class="t1" colspan="8">Boda Boda Records</th>
+             </tr>
+            </thead>
+             <tr >
+                 <th>NO</th>
+                 <th>Plate</th>
+                 <th>Email</th>
+                 <th>Chasis</th>
+                 <th>Model</th>
+                 <th>Operation</th>
+                 <th>Manufacturer</th>
+                 <th>IDnumber</th>
+ 
+             </tr>
+             <tr>
+                 <td>1</td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+             </tr>
+             <tr>
+                 <td>2</td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+             </tr>
+ 
+             <tr>
+                 <td>3</td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+             </tr>
+ 
+             <tr>
+                 <td>4</td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+             </tr>
+ 
+             <tr></tr>
+         </table>
+     </div>
+     <div class="third">
+         <h3>Registration Details</h3>
+         <table class="table">
+            <thead>
+             <tr>
+                 <th class="t1" colspan="8">Boda Boda Records</th>
+             </tr>
+            </thead>
+             <tr border="collapse">
+                 <th>NO</th>
+                 <th>Plate</th>
+                 <th>Email</th>
+                 <th>Chasis</th>
+                 <th>Model</th>
+                 <th>Operation</th>
+                 <th>Manufacturer</th>
+                 <th>IDnumber</th>
+ 
+             </tr>
+             <tr>
+                 <td>1</td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+             </tr>
+             <tr>
+                 <td>2</td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+             </tr>
+ 
+             <tr>
+                 <td>3</td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+             </tr>
+ 
+             <tr>
+                 <td>4</td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+             </tr>
+ 
+             <tr></tr>
+         </table>
+     </div>
+</div>
 <div id="myModal" class="modal">
 
     <!-- Modal content -->
