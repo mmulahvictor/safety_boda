@@ -93,6 +93,8 @@ nav img{
     width: 350px;
     font-size: 20px;
     border-radius: 10px;
+    cursor: pointer;
+    
 }
 .contain{
     display: flex;
@@ -100,18 +102,18 @@ nav img{
     padding-right: 10%;
     align-items: center;
     text-align: justify;
-    
-   
+}
+.last{
+    text-decoration: none;
+    color: white;
 }
 .header{
     margin: right;
     margin-top: 5%;
     text-align: center;
-
-    
-
 }
 .arrow{
 color: white;
-
 }
+
+

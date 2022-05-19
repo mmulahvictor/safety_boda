@@ -164,6 +164,7 @@ width: 100%;
 overflow: hidden;
 text-align: center;
 display: table;
+box-shadow:  0 0 20px rgba(rgb(201, 108, 108), rgb(70, 83, 70), blue, alpha);
 padding: 0 0 8em 0;
 border-collapse: collapse;
 /* padding-left: 100px; */
@@ -177,11 +178,11 @@ height: 60px;
  }
 
  .table tr :nth-child(odd){
-    background-color: #8a8482;
+    background-color: #bd8f80;
  }
 
  .table tr :nth-child(even){
-    background-color: #5f5c5b;
+    background-color: #f3a084;
  }
 
 .table tr:hover{
