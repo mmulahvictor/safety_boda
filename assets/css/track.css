@@ -46,6 +46,13 @@ body{
     margin: 10px;
     padding-bottom: 0px;
     line-height: 0px;
+    -webkit-transition: all 0.1s ease-out;
+}
+
+.text:hover{
+    color: #0f830b;
+    /* font-size: 80px; */
+    -webkit-transform: scale(2.0);
 }
 
 .piki{
@@ -56,10 +63,19 @@ body{
     padding-left: 150px;
     align-content: center;
     /* padding-left: 180px; */
-    color: #FD4600;
+    color: #447e03;
+    font-family: sans-serif;
     margin: 50px;
     padding-bottom: 0px;
     line-height: 0px;
+    -webkit-transition: all 0.1s ease-out;
+}
+
+.text2:hover{
+    font-size: 30px;
+    color: #FD4600;
+    /* transform: scale(1.5); */
+    -webkit-transform: scale(2.0);
 }
 
 .btn{
@@ -83,13 +99,20 @@ body{
 
 .btn button{
     /* padding-top: 20px; */
-    background-color: #0f830b;
+    /* background-color: #0f830b; */
+    background-color: transparent;
     border-radius: 10px;
     line-height: 0px;
-    border: none;
-    width: 100px;
+    border: 2px solid rgb(255, 54, 4);
+    width: 130px;
     height: 40px;
    
+}
+
+button:hover{
+    background-color: #FD4600;
+    color: #080808;
+    animation: ;
 }
 
 .car{
