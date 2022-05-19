@@ -267,6 +267,13 @@ font-weight: 800;
     margin: 20px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+.logo__{
+    height:40px;
+    width:40px;
+    margin-top: 10px;
+    border-radius: 100px;
+    /* background-color: white; */
+}
 .confirm{
     padding: 7px;
     margin: 13px;

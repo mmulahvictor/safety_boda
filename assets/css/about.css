@@ -1,4 +1,11 @@
-
+@font-face {
+  font-family: best;
+  src: url('../font/best.ttf');
+}
+  
+*{
+  font-family: best;
+}
 /*Navigation*/
 .nav{
     height: 50px;
@@ -39,15 +46,25 @@ font-weight: 800;
     background-color: white;
  
 }
+.logo__{
+  height:40px;
+  width:40px;
+  margin-top: 10px;
+  border-radius: 100px;
+  /* background-color: white; */
+}
 .links{
-    padding: 7px;
-    margin: 13px;
-    margin-top: 20px;
-    background-color: white;
-    border-radius: 7px;
-    font-size: 10px;
-    color: #000000;
-    text-decoration: none;
+  padding: 7px;
+  margin: 13px;
+  margin-top: 20px;
+  background-color: unset;
+  border: 1px solid white;
+  border-radius: 2px;
+  color: white !important;
+  font-size: 15px !important;
+  font-size: 10px;
+  color: #000000;
+  text-decoration: none;
 }
 .links:active{
   color: green;
