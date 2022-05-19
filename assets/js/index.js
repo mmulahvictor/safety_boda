@@ -17,8 +17,6 @@ window.onclick = function (event) {
     modal.style.display = "none";
   }
 }
-
-
 function success(message){
   document.getElementById("ok").style.visibility = "visible";
   document.getElementById("wrong").style.visibility = "hidden";
@@ -89,7 +87,7 @@ function handleForm(event) {
       if (vehicleRecord[i].plate1 == plate) {
         
 
-
+        error("This vehicle has already been registered.")
         modal.style.display = "block";
 
       }
@@ -111,7 +109,7 @@ function handleForm(event) {
         console.log(fromDB);
         reset.click();
   
-
+success("This vehicle has successfully been added to the system.")
         modal.style.display = "block";
 
       }
