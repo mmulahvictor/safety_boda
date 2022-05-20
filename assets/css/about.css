@@ -1,8 +1,11 @@
-body{
-    padding-left: 80px;
-    padding-right: 80px;
+@font-face {
+  font-family: best;
+  src: url('../font/best.ttf');
 }
-
+  
+*{
+  font-family: best;
+}
 /*Navigation*/
 .nav{
     height: 50px;
@@ -43,15 +46,25 @@ font-weight: 800;
     background-color: white;
  
 }
+.logo__{
+  height:40px;
+  width:40px;
+  margin-top: 10px;
+  border-radius: 100px;
+  /* background-color: white; */
+}
 .links{
-    padding: 7px;
-    margin: 13px;
-    margin-top: 20px;
-    background-color: white;
-    border-radius: 7px;
-    font-size: 10px;
-    color: #000000;
-    text-decoration: none;
+  padding: 7px;
+  margin: 13px;
+  margin-top: 20px;
+  background-color: unset;
+  border: 1px solid white;
+  border-radius: 2px;
+  color: white !important;
+  font-size: 15px !important;
+  font-size: 10px;
+  color: #000000;
+  text-decoration: none;
 }
 .links:active{
   color: green;
@@ -83,7 +96,7 @@ img {
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
+  max-width: 100%;
   position: relative;
   margin: auto;
 }
@@ -102,7 +115,7 @@ img {
   color: white;
   font-weight: bold;
   font-size: 18px;
-  transition: 0.6s ease;
+  transition: 2s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
 }
@@ -121,7 +134,7 @@ img {
 /* Caption text */
 .text {
   color: #f2f2f2;
-  font-size: 20px;
+  font-size: 30px;
   padding: 8px 12px;
   position: absolute;
   bottom: 8px;
@@ -188,13 +201,13 @@ img {
 
 }
 section > img{
-    width: 575px;
+    width: 595px;
     border-radius: 10px;
 }
 #column{
     display: flex;
     margin-bottom: 20px;
-    margin-right: 90px;
+    margin-right: 150px;
     margin-left: 80px;
 }
 #column > div{
@@ -243,6 +256,7 @@ section > img{
     height: 30px;
     width: 70px;
     margin-left: 430px;
+    margin-top: 10px;
     background-color: rgb(253,70,0);
     border: none;
     border-radius: 5px;

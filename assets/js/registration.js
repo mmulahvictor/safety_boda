@@ -9,11 +9,14 @@ var form = document.getElementById("registration");
 
 
 window.addEventListener("load", function () {
+  GenerateTable();
   // code goes below
   document.getElementById("login").style.display = 'none';
   document.getElementById("scess").style.display = 'none';
   document.getElementById("err").style.display = 'none';
   document.getElementById("registration").style.display = 'none';
+  document.getElementById("track").style.display = 'none';
+
 
  
 
@@ -32,10 +35,46 @@ span.onclick = function () {
 }
 
 //FUNCTIONS
+function GenerateTable() {
+  //Build an array containing Customer records.
+  var customers = vehicleRecord;
+ 
+
+  //Create a HTML Table element.
+  var table = document.createElement("TABLE");
+  // table.border = "1";
+
+  //Get the count of columns.
+  var columnCount = customers[0].length;
+
+  //Add the header row.
+  var row = table.insertRow(-1);
+  for (var i = 0; i < columnCount; i++) {
+      var headerCell = document.createElement("TH");
+      headerCell.innerHTML = customers[0][i];
+      row.appendChild(headerCell);
+  }
+
+  //Add the data rows.
+  for (var i = 1; i < customers.length; i++) {
+      row = table.insertRow(-1);
+      for (var j = 0; j < columnCount; j++) {
+          var cell = row.insertCell(-1);
+          cell.innerHTML = customers[i][j];
+      }
+  }
+
+  var dvTable = document.getElementById("vehicles");
+  dvTable.innerHTML = "";
+  dvTable.appendChild(table);
+}
+
 function gotoReg() {
   document.getElementById("registration").style.display = 'block';
   document.getElementById("login").style.display = 'none';
   document.getElementById("verify_section").style.display = 'none';
+  document.getElementById("track").style.display = 'none';
+
 
 }
 
@@ -43,11 +82,22 @@ function gotoLogin() {
   document.getElementById("registration").style.display = 'none';
   document.getElementById("login").style.display = 'block';
   document.getElementById("verify_section").style.display = 'none';
+  document.getElementById("track").style.display = 'none';
+
 }
 function gotoVerify() {
   document.getElementById("registration").style.display = 'none';
   document.getElementById("login").style.display = 'none';
   document.getElementById("verify_section").style.display = 'block';
+  document.getElementById("track").style.display = 'none';
+
+}
+function gotoTrack() {
+  document.getElementById("registration").style.display = 'none';
+  document.getElementById("login").style.display = 'none';
+  document.getElementById("verify_section").style.display = 'none';
+  document.getElementById("track").style.display = 'block';
+
 }
 
 
@@ -146,9 +196,14 @@ if(print!=null){
   localStorage.removeItem("searchResults");
   localStorage.setItem("searchResults", JSON.stringify(print)); //store colors
   document.getElementById("rider").innerHTML=print.fname1;
-  document.getElementById("plate1").innerHTML=print.plate1;
+  document.getElementById("plate11").innerHTML=print.plate1;
+  document.getElementById("operation").innerHTML=print.oparation1;
+
   document.getElementById("scess").style.display = 'block';
   document.getElementById("err").style.display = 'none';
+
+
+
 
 }
 else{
